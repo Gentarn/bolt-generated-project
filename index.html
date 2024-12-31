@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nano Streaming App</title>
+      </head>
+      <body>
+        <div id="app">
+          <h1>Nano Streaming App</h1>
+          <div id="stream-content" style="display:none;">
+            <div>
+              <label for="apiKey">API Key:</label>
+              <input type="text" id="apiKey" name="apiKey" />
+            </div>
+            <div>
+              <label for="passcode">Passcode:</label>
+              <input type="password" id="passcode" name="passcode" />
+            </div>
+            <button id="connectBtn">Connect</button>
+            <video id="stream" width="640" height="360" controls></video>
+            <br />
+            <a href="/chat.html">Open Chat</a>
+          </div>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+      </body>
+    </html>
